@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reproducible-research-preflight"
+version = "0.1.0"
+description = "Local-first academic research workflow CLI"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "FutureTech Open Source"}]
+dependencies = []
+
+[project.scripts]
+reproducible-research-preflight = "reproducible_research_preflight.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
